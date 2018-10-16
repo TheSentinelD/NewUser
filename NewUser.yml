@@ -1,0 +1,12 @@
+﻿---
+- name: Vytvoří AnsibleAdmina
+  hosts: "{{ seznam_stanic }}"
+  tasks:    
+  - name: Vytvoří účet
+    win_user: 
+     name: "{{ jmeno }}"
+     password: "{{ heslo }}"
+     state: present
+     groups: 
+      - Users
+
