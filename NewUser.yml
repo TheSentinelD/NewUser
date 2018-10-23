@@ -1,5 +1,5 @@
 ﻿---
-- name: Vytvoří AnsibleAdmina
+- name: Vytvoří lokální účet
   hosts: "{{ seznam_stanic }}"
   tasks:    
   - name: Vytvoří účet
